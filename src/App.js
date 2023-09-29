@@ -1,6 +1,9 @@
 import "./App.css";
 import useLocalStorage from "use-local-storage";
-
+// import Header from "./components/Header/Header";
+import { FaHeart } from "react-icons/fa";
+import Navbar from "./components/Navbar/Navbar";
+import { ThemeSwitch } from "./components";
 // #7132b3 (dark) #ddccef (light)
 
 function App() {
@@ -16,23 +19,27 @@ function App() {
   };
   return (
     <div className="App" data-theme={theme}>
-      <header className="App-header">
-        {/* maybe add a box here */}
-        <p>Hi There! I am just starting a new project </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <button onClick={switchTheme}>
-         Change to {theme === "light"? "dark": "light"} theme
-        </button>
-      </header>
+      <Navbar changeTheme={switchTheme} currentTheme={theme}/>
     </div>
   );
 }
 
 export default App;
+
+// import React from "react";
+// import { About, Footer, Work, Experience, Skills, Header } from "./pages";
+// import { Navbar } from "./components";
+// const App = () => {
+//   return (
+//     <div className="app">
+//       {/* <Navbar /> */}
+
+//       {/* <Header />
+//       <About />
+//       <Work />
+//       <Skills /> */}
+//     </div>
+//   );
+// };
+
+// export default App;

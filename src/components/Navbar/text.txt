@@ -1,0 +1,41 @@
+/ export default header;
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+// import { navLinks } from "../constants";
+import { Images } from "../../constants";
+import { FcMenu } from "react-icons/fc";
+import { AiOutlineClose } from "react-icons/ai";
+import "./Navbar.scss";
+
+const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  return (
+    <nav className="app__navbar">
+      <div className=".app__navbar-logo">
+        <img src={Images.logo} />
+      </div>
+      {/* <div> */}
+      <ul
+      id="navbar"
+        className={!showMenu ? "app__navbar-links active" : "app__navbar-links "}
+      >
+        {["Home", "About", "Experience", "Skills", "Contact"].map((el, i) => (
+          <li className="app__flex p-text" key={Math.random()}>
+            <div />
+            <a href={`#${el}`}>{el}</a>
+          </li>
+        ))}
+      </ul>
+      {/* </div> */}
+      <div id="mobile-nav">
+        {showMenu ? (
+          <FcMenu onClick={() => setShowMenu(!showMenu)} />
+        ) : (
+          <AiOutlineClose onClick={() => setShowMenu(!showMenu)} />
+        )}
+      </div>
+    </nav>
+  );
+};
+export default Navbar;

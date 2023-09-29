@@ -1,21 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+/* 
 :root {
   --background: #def2f1;
   --text-primary: #17252a;
   --text-secondary: #2b7a78;
-  --accent: #3AAFA9;
+  --accent: #3aafa9;
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+[data-theme="dark"] {
+  --background: #17252a;
+  --text-primary: #def2f1;
+  --text-secondary: #2b7a78;
+  --accent: #3aafa9;
+}
+body {
+  margin: 0;
+  padding: 0;
+ 
+} */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  ---background: #def2f1;
+  --text-primary: #17252a;
+  --text-secondary: #17252a;
+  --accent: #3aafa9;
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 [data-theme="dark"] {
   --background: #17252a;

@@ -1,29 +1,43 @@
-/* background-color: #def2f1; */
-
-/* color: #2b7a78; */
-
-.App {
-  color: var(--text-primary);
-  background-color: var(--background);
-  font-size: large;
-  font-weight: bold;
-  padding: 20px;
-  height: calc(100vh - 40px);
-  transition: all 0.5s;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container {
+  margin-right: auto;
 }
+
+.grid {
+  display: grid;
+}
+
 .App-link {
   color: var(--text-secondary);
 }
-button {
+/* button {
   color: var(--text-primary);
   background-color: var(--background);
   border: 2px var(--text-primary) solid;
   float: right;
   transition: all 0.5s;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app__theme-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 30px;
+  background-color: orange;
+  margin: 0 5px 8px 10px;
+}
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
