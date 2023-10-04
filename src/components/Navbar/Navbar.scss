@@ -22,6 +22,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid var(--accent);
 }
 .navbar .logo a {
   font-size: 1.5rem;

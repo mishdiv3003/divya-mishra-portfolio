@@ -3,7 +3,7 @@ import useLocalStorage from "use-local-storage";
 // import Header from "./components/Header/Header";
 import { FaHeart } from "react-icons/fa";
 import Navbar from "./components/Navbar/Navbar";
-import { ThemeSwitch } from "./components";
+import { ThemeSwitch, AboutCard } from "./components";
 // #7132b3 (dark) #ddccef (light)
 
 function App() {
@@ -19,7 +19,8 @@ function App() {
   };
   return (
     <div className="App" data-theme={theme}>
-      <Navbar changeTheme={switchTheme} currentTheme={theme}/>
+      <Navbar changeTheme={switchTheme} currentTheme={theme} />
+      <AboutCard />
     </div>
   );
 }
