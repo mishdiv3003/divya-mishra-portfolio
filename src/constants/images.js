@@ -25,7 +25,7 @@ import about04 from "../assets/about04.png";
 
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -35,6 +35,8 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import me from "../assets/picture.jpg";
+import logo from "../assets/logo-portfolio.png"
+import logo_new from "../assets/logo-new.png"
 
 export default {
   email,
@@ -71,4 +73,5 @@ export default {
   skype,
   spotify,
   me,
+  logo_new
 };

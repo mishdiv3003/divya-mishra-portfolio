@@ -10,6 +10,7 @@ import {
 } from "react-icons/fc";
 import { RiLightbulbFlashLine, RiLightbulbLine } from "react-icons/ri";
 import "./Navbar.scss";
+import { Images } from "../../constants";
 import { NavLink } from "react-router-dom";
 
 // #7132b3 (dark) #ddccef (light)
@@ -19,21 +20,31 @@ function navbar(props) {
     <>
       <nav className="navbar flex-center">
         <div className="navbar_logo">
-          <a href="#">MEEEE!</a>
+          <a href="#">
+            <img src={Images.logo_new} width={48} height={48} />
+          </a>
         </div>
         <div className="navbar_link-container">
           <ul className="links">
             <li>
-              <a href="home">Home</a>
+              <a href="about">
+                <FcBusinesswoman />
+              </a>
             </li>
             <li>
-              <a href="about">About</a>
+              <a href="skills">
+                <FcEngineering />
+              </a>
             </li>
             <li>
-              <a href="work">Work</a>
+              <a href="work">
+                <FcBriefcase />
+              </a>
             </li>
             <li>
-              <a href="contact">Contact</a>
+              <a href="contact">
+                <FcAddressBook />
+              </a>
             </li>
           </ul>
           <button className="app__theme-btn" onClick={props.changeTheme}>

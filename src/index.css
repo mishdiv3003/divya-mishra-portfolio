@@ -33,7 +33,6 @@ body {
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
-
 }
 
 * {
@@ -48,3 +47,8 @@ body {
   --text-secondary: #2b7a78;
   --accent: #3aafa9;
 }
+
+/* max-width: 200px;
+border-radius: 40px;
+transition: transform 0.3s ease-in-out 0s, box-shadow 0.2s ease-in-out 0s;
+border: 1px solid rgb(88, 88, 88); */
