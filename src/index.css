@@ -22,12 +22,19 @@ body {
 } */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 :root {
   --font-base: "DM Sans", sans-serif;
-
-  ---background: #def2f1;
+  ---background: white;
   --text-primary: #17252a;
   --text-secondary: #17252a;
+  --text-dark: #17252a;
+
   --accent: #3aafa9;
 
   --font-medium: 500;
@@ -41,11 +48,14 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
+
 [data-theme="dark"] {
   --background: #17252a;
   --text-primary: #def2f1;
   --text-secondary: #2b7a78;
   --accent: #3aafa9;
+  --text-dark: #17252a;
+
 }
 
 /* max-width: 200px;

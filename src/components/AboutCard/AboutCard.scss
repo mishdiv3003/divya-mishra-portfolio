@@ -1,28 +1,21 @@
 .about-section {
   padding: 1.5rem;
+  display: grid;
+  column-gap: 40px;
 }
 .about-card {
-  // background-color: var(--accent);
   background-color: rgba(58, 175, 169, 0.5);
-
-  height: 50%;
-  // width: 55%;
   border-radius: 35%;
   justify-content: center;
-  align-items: flex-start;
   padding: 0.5rem;
   border-radius: 10px;
-  // margin: 2rem;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .profile-container {
+  display: flex;
   justify-content: center;
   align-items: center;
-  // display: flex;
-  // position: absolute;
-  // top: 80px;
-  // right: 24px;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   .profile {
     border: 5px solid var(--accent);
@@ -56,6 +49,8 @@
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+  text-align: center;
+  align-self: center;
 }
 
 @keyframes typing {
@@ -67,5 +62,15 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-xl-6 {
+    flex: 0 0 auto;
+    width: 40%;
+  }
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 40%;
   }
 }
