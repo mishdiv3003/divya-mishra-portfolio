@@ -34,6 +34,8 @@ body {
   --text-primary: #17252a;
   --text-secondary: #17252a;
   --text-dark: #17252a;
+  --dark-shadow: #17252a;
+--work-button: #17252a;
 
   --accent: #3aafa9;
 
@@ -55,6 +57,7 @@ body {
   --text-secondary: #2b7a78;
   --accent: #3aafa9;
   --text-dark: #17252a;
+  --dark-shadow: #2b7a78;
 
 }
 

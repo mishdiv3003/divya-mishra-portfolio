@@ -27,7 +27,7 @@ function Experience() {
 
           return (
             <VerticalTimelineElement
-            className="timeline-box"
+              className="timeline-box"
               key={element.key}
               date={element.date}
               dateClassName="date"
@@ -51,6 +51,11 @@ function Experience() {
                   {element.buttonText}
                 </a>
               )}
+              {/* <div className="techStack">
+                {element.techStack.map((tech) => {
+                  return <img src={tech.techIcon} width={40} height={40} />;
+                })}
+              </div> */}
             </VerticalTimelineElement>
           );
         })}

@@ -28,10 +28,14 @@
   align-items: center;
   border: none;
   border-radius: 50%;
-  width: 32px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: orange;
-  margin: 0 5px 8px 10px;
+  margin: 0 5px 8px 20px;
+}
+.app__theme-btn svg {
+  height: 2rem;
+  width: 2rem;
 }
 .App {
   color: var(--text-primary);

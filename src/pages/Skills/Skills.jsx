@@ -1,33 +1,49 @@
 import React from "react";
 import { SkillCard } from "../../components";
 import { Images } from "../../constants";
-import "./Skills.scss"
+import "./Skills.scss";
 
 const Skills = () => {
   const skillsArray = [
     {
       skillLogo: Images.html,
-      skillname: "",
+      skillname: "HTML5",
     },
     {
       skillLogo: Images.css,
-      skillname: "",
+      skillname: "CSS",
     },
     {
       skillLogo: Images.javascript,
-      skillname: "",
+      skillname: "Javascript",
     },
     {
       skillLogo: Images.react,
-      skillname: "",
+      skillname: "React",
     },
     {
       skillLogo: Images.redux,
-      skillname: "",
+      skillname: "Redux",
     },
     {
       skillLogo: Images.typescript,
-      skillname: "",
+      skillname: "TypeScript",
+    },
+    {
+      skillLogo: Images.angular,
+      skillname: "Angular",
+    },
+    {
+      skillLogo: Images.git,
+      skillname: "Git",
+    },
+    {
+      skillLogo: Images.github,
+      skillname: "Github",
+    },
+    {
+      skillLogo: Images.vsCode,
+      skillname: "VScode",
     },
   ];
   return (

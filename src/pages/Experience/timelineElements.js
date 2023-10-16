@@ -1,13 +1,21 @@
+import { Images } from "../../constants";
+
 let timelineElements = [
   {
     id: 1,
     title: "Sr. Application Developer",
     company: "Accenture",
     description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
+      "Crafting user experiences. Working with Micro-frontends with React-redux, collaborating with cross-functional teams.",
     buttonText: "company",
     date: "April 2022 - present",
     icon: "work",
+    // techStack: [
+    //   { name: "React", techIcon: Images.react },
+    //   { name: "Javascript", techIcon: Images.javascript },
+    //   { name: "Redux", techIcon: Images.redux },
+    //   { name: "typeScript", techIcon: Images.typescript },
+    // ],
   },
   {
     id: 2,
@@ -18,6 +26,12 @@ let timelineElements = [
     buttonText: "View Backend Projects",
     date: "January 2022 - April 2022",
     icon: "work",
+    // techStack: [
+    //   { name: "React", techIcon: Images.react },
+    //   { name: "Javascript", techIcon: Images.javascript },
+    //   { name: "Redux", techIcon: Images.redux },
+    //   { name: "typeScript", techIcon: Images.typescript },
+    // ],
   },
   {
     id: 3,
@@ -28,6 +42,12 @@ let timelineElements = [
     buttonText: "View Backend Projects",
     date: "January 2021 - January 2022",
     icon: "work",
+    // techStack: [
+    //   { name: "React", techIcon: Images.react },
+    //   { name: "Javascript", techIcon: Images.javascript },
+    //   { name: "Redux", techIcon: Images.redux },
+    //   { name: "typeScript", techIcon: Images.typescript },
+    // ],
   },
   {
     id: 4,
@@ -38,26 +58,32 @@ let timelineElements = [
     buttonText: "View Backend Projects",
     date: "December 2018 - January 2021",
     icon: "work",
+    // techStack: [
+    //   { name: "React", techIcon: Images.react },
+    //   { name: "Javascript", techIcon: Images.javascript },
+    //   { name: "Redux", techIcon: Images.redux },
+    //   { name: "typeScript", techIcon: Images.typescript },
+    // ],
   },
-  {
-    id: 5,
-    title: "Hawking College",
-    location: "Skystead, Craonia",
-    description:
-      "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    buttonText: "College Projects",
-    date: "2007 - 2011",
-    icon: "school",
-  },
-  {
-    id: 6,
-    title: "Marble Hills Grammar School",
-    location: "Dragontail, Ascana",
-    description:
-      "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    date: "2003 - 2007",
-    icon: "school",
-  },
+  // {
+  //   id: 5,
+  //   title: "Hawking College",
+  //   location: "Skystead, Craonia",
+  //   description:
+  //     "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+  //   buttonText: "College Projects",
+  //   date: "2007 - 2011",
+  //   icon: "school",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Marble Hills Grammar School",
+  //   location: "Dragontail, Ascana",
+  //   description:
+  //     "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+  //   date: "2003 - 2007",
+  //   icon: "school",
+  // },
 ];
 
 export default timelineElements;

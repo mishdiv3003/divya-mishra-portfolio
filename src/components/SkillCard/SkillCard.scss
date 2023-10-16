@@ -7,12 +7,12 @@
   height: 80px;
 
   max-width: 160px;
-  background-color: var(--accent);
+  // background-color: var(--accent);
   border-radius: 10px;
   margin: 1rem;
   transition: box-shadow 1s ease-in-out;
   &:hover {
-    box-shadow: 5px 10px white; // COLOR
+    box-shadow: 5px 10px var(--accent); // COLOR
   }
 }
 

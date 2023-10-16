@@ -35,8 +35,12 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import me from "../assets/picture.jpg";
-import logo from "../assets/logo-portfolio.png"
-import logo_new from "../assets/logo-new.png"
+import logo from "../assets/logo-portfolio.png";
+import logo_new from "../assets/logo-new.png";
+import vsCode from "../assets/vsCode.svg";
+import js from "../assets/javascript-seeklogo.com_wthmgd.svg";
+import github from "../assets/github.svg";
+import angular from "../assets/angular.png"
 
 export default {
   email,
@@ -73,5 +77,9 @@ export default {
   skype,
   spotify,
   me,
-  logo_new
+  logo_new,
+  vsCode,
+  github,
+  js,
+  angular
 };

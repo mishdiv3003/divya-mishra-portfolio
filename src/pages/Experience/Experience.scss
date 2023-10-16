@@ -14,12 +14,22 @@
 h4 {
   padding-top: 0.25em;
 }
+.techStack {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+}
 
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
     0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
   padding: 2em 3em !important;
+  .vertical-timeline-element-content-arrow{
+    border-right: 7px solid #3aafa9 !important;
+  }
 }
+
 
 .date {
   color: var(--text-primary);
@@ -38,12 +48,12 @@ h4 {
 }
 
 .workButton {
-  background-color: #06d6a0;
+  background-color: var(--work-button);
 }
 
-.workButton:hover {
-  background-color: #0ac593;
-}
+// .workButton:hover {
+//   background-color: #0ac593;
+// }
 
 .schoolButton {
   background-color: #f9c74f;
@@ -55,13 +65,14 @@ h4 {
 .vertical-timeline-element-date {
   position: relative;
 }
+
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns
     .vertical-timeline-element-content
     .vertical-timeline-element-date {
     position: relative !important;
     width: 100%;
-     left: 0 !important; 
+    left: 0 !important;
     top: 6px;
     font-size: 16px;
     font-size: 1rem;
