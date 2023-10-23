@@ -4,7 +4,7 @@ import useLocalStorage from "use-local-storage";
 import { FaHeart } from "react-icons/fa";
 import Navbar from "./components/Navbar/Navbar";
 import { ThemeSwitch, AboutCard, SkillCard } from "./components";
-import { Skills, Experience } from "./pages";
+import { Skills, Experience, Footer } from "./pages";
 // #7132b3 (dark) #ddccef (light)
 
 function App() {
@@ -24,26 +24,9 @@ function App() {
       <AboutCard />
       <Skills />
       <Experience />
+      <Footer />
     </div>
   );
 }
 
 export default App;
-
-// import React from "react";
-// import { About, Footer, Work, Experience, Skills, Header } from "./pages";
-// import { Navbar } from "./components";
-// const App = () => {
-//   return (
-//     <div className="app">
-//       {/* <Navbar /> */}
-
-//       {/* <Header />
-//       <About />
-//       <Work />
-//       <Skills /> */}
-//     </div>
-//   );
-// };
-
-// export default App;

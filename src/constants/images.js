@@ -40,7 +40,8 @@ import logo_new from "../assets/logo-new.png";
 import vsCode from "../assets/vsCode.svg";
 import js from "../assets/javascript-seeklogo.com_wthmgd.svg";
 import github from "../assets/github.svg";
-import angular from "../assets/angular.png"
+import angular from "../assets/angular.png";
+import gmail from "../assets/gmail_logo.png";
 
 export default {
   email,
@@ -81,5 +82,6 @@ export default {
   vsCode,
   github,
   js,
-  angular
+  angular,
+  gmail,
 };

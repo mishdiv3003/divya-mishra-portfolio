@@ -18,7 +18,7 @@ import { NavLink } from "react-router-dom";
 function navbar(props) {
   return (
     <>
-      <nav className="navbar flex-center">
+      <nav className="navbar">
         <div className="navbar_logo">
           <a href="#">
             <img src={Images.logo_new} width={48} height={48} />

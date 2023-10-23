@@ -11,33 +11,48 @@ a {
   text-decoration: none;
   color: var(--text-primary);
   &:hover {
-    color: orange;
+    color: var(--text-secondary);
   }
 }
 a svg {
   height: 2rem;
   width: 2rem;
 }
-.navbar {
+.footer {
   width: 100%;
-  height: 60px;
-  // max-width: 1200px;
+  height: 180px;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--accent);
+  border: none !important;
+  padding: 20px 100px;
 }
-.navbar .logo a {
+.footer .logo a {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.navbar .links {
+.footer .links {
   display: flex;
   gap: 2rem;
 }
-.navbar_link-container {
+.footer-container {
   justify-content: right;
   display: flex;
   align-items: center;
+}
+.footer_link-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+  .footer_links {
+    // margin: 10px;
+    width: 132px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
 }
