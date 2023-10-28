@@ -26,7 +26,7 @@ const Navbar = (props) => {
       <nav className="navbar">
         <div className="navbar_logo">
           <a href="/#about">
-            <img src={Images.logo_new} width={54} height={54} />
+            <img alt="user initials as logo" src={Images.logo_new} width={54} height={54} />
           </a>
         </div>
         <div className="navbar_link-container">

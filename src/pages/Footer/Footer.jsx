@@ -18,16 +18,21 @@ const Footer = (props) => {
             <a
               href="https://www.linkedin.com/in/divya-mishra-3003"
               target="_blank"
+              rel="noreferrer"
             >
               <FaLinkedin fill="#004182" />
             </a>
 
-            <a href="github">
+            <a
+              href="https://github.com/mishdiv3003/mishdiv3003"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub stroke="red" />
             </a>
 
             <a href="mailto: divyadm3003@gmail.com">
-              <img src={Images.gmail} height={32} width={32} />
+              <img  alt="gmail logo"src={Images.gmail} height={32} width={32} />
             </a>
           </div>
         </div>

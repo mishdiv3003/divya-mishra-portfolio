@@ -12,7 +12,7 @@ const AboutCard = () => {
       <Container fluid className="about-section">
         <Row>
           <Col sm={12} md={12} lg={12} xl={12} className="profile-container">
-            <img className="profile" src={Images.me} height={240} width={240} />
+            <img alt="user profile" className="profile" src={Images.me} height={240} width={240} />
           </Col>
         </Row>
         <Row>

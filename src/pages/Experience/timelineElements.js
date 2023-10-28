@@ -1,5 +1,3 @@
-import { Images } from "../../constants";
-
 let timelineElements = [
   {
     id: 1,
