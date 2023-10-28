@@ -35,13 +35,14 @@ body {
   --text-secondary: #17252a;
   --text-dark: #17252a;
   --dark-shadow: #17252a;
---work-button: #17252a;
+  --work-button: #17252a;
 
   --accent: #3aafa9;
 
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
+  --nav-bg-color: #def2f1;
 }
 
 * {
@@ -58,7 +59,7 @@ body {
   --accent: #3aafa9;
   --text-dark: #17252a;
   --dark-shadow: #2b7a78;
-
+  --nav-bg-color: #17252a;
 }
 
 /* max-width: 200px;

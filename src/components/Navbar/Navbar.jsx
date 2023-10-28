@@ -1,62 +1,92 @@
-import React from "react";
-import {
-  FcHome,
-  FcOpenedFolder,
-  FcBusinesswoman,
-  FcAddressBook,
-  FcBriefcase,
-  FcEngineering,
-  FcGraduationCap,
-} from "react-icons/fc";
-import { RiLightbulbFlashLine, RiLightbulbLine } from "react-icons/ri";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { Images } from "../../constants";
-import { NavLink } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 
-// #7132b3 (dark) #ddccef (light)
+const Navbar = (props) => {
+  const [showHideMenu, setShowHideMenu] = useState(false);
+  const handleClick = (anchor) => {
+    const id = `${anchor}-section`;
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
-function navbar(props) {
+  const handleSelection = (menuOption) => {
+    handleClick(menuOption);
+    setShowHideMenu(false);
+  };
   return (
     <>
       <nav className="navbar">
         <div className="navbar_logo">
-          <a href="#">
-            <img src={Images.logo_new} width={48} height={48} />
+          <a href="/#about">
+            <img src={Images.logo_new} width={54} height={54} />
           </a>
         </div>
         <div className="navbar_link-container">
           <ul className="links">
-            <li>
-              <a href="about">
-                <FcBusinesswoman />
-              </a>
-            </li>
-            <li>
-              <a href="skills">
-                <FcEngineering />
-              </a>
-            </li>
-            <li>
-              <a href="work">
-                <FcBriefcase />
-              </a>
-            </li>
-            <li>
-              <a href="contact">
-                <FcAddressBook />
-              </a>
-            </li>
+            {props.menuOptionsList.map((navObj) => {
+              return (
+                <li key={Math.random()}>
+                  <a
+                    href={navObj.routeName}
+                    onClick={() => handleClick(navObj.section)}
+                  >
+                    {navObj.icon}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
-          <button className="app__theme-btn" onClick={props.changeTheme}>
-            {props.currentTheme === "dark" ? (
-              <RiLightbulbLine />
-            ) : (
-              <RiLightbulbFlashLine />
-            )}
-          </button>
+          <ThemeSwitch
+            themeId={"theme_btn"}
+            changeTheme={props.changeTheme}
+            currentTheme={props.currentTheme}
+          />
         </div>
+
+        <div
+          id="toggleBtn"
+          className="toggle_btn"
+          onClick={() => setShowHideMenu(!showHideMenu)}
+        >
+          <FaBars />
+        </div>
+        {showHideMenu && (
+          <div className="dropdown_menu open">
+            <div>
+              {props.menuOptionsList.map((navObj) => {
+                return (
+                  <li key={Math.random()}>
+                    <a
+                      href={navObj.routeName}
+                      onClick={() => handleSelection(navObj.section)}
+                    >
+                      {navObj.icon} <span>{navObj.menuOptionName}</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </div>
+            <div className="theme-in-menu">
+              <ThemeSwitch
+                themeId={"theme_btn_menu"}
+                changeTheme={props.changeTheme}
+                currentTheme={props.currentTheme}
+              />
+
+              <p>Change Theme</p>
+            </div>
+          </div>
+        )}
       </nav>
     </>
   );
-}
-export default navbar;
+};
+export default Navbar;

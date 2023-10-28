@@ -1,13 +1,9 @@
 import "./App.css";
 import useLocalStorage from "use-local-storage";
-// import Header from "./components/Header/Header";
-import { FaHeart } from "react-icons/fa";
-import Navbar from "./components/Navbar/Navbar";
-import { ThemeSwitch, AboutCard, SkillCard } from "./components";
-import { Skills, Experience, Footer } from "./pages";
-// #7132b3 (dark) #ddccef (light)
+// import { FaHeart } from "react-icons/fa";
+import { Skills, Experience, Footer, About, Header } from "./pages";
 
-function App() {
+const App = () => {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
     "theme",
@@ -20,13 +16,15 @@ function App() {
   };
   return (
     <div className="container-fluid App" data-theme={theme}>
-      <Navbar changeTheme={switchTheme} currentTheme={theme} />
-      <AboutCard />
-      <Skills />
-      <Experience />
-      <Footer />
+      <Header changeTheme={switchTheme} currentTheme={theme} />
+      <div>
+        <About />
+        <Skills />
+        <Experience />
+        <Footer />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

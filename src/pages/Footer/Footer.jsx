@@ -1,14 +1,13 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaPhone } from "react-icons/fa";
-import { RiMailFill } from "react-icons/ri";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Images } from "../../constants";
 
 import "./Footer.scss";
 
-function Footer(props) {
+const Footer = (props) => {
   return (
     <>
-      <div className="footer flex-center">
+      <div id="contact-section" className="footer flex-center">
         <div>
           <p>Thanks for being here! </p>
           <p>Feel free to connect! ✌️</p>
@@ -27,8 +26,7 @@ function Footer(props) {
               <FaGithub stroke="red" />
             </a>
 
-            <a href="work">
-              {/* <RiMailFill /> */}
+            <a href="mailto: divyadm3003@gmail.com">
               <img src={Images.gmail} height={32} width={32} />
             </a>
           </div>
@@ -36,5 +34,5 @@ function Footer(props) {
       </div>
     </>
   );
-}
+};
 export default Footer;

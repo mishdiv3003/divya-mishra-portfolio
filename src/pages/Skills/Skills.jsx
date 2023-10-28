@@ -47,7 +47,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="wrapper">
+    <div id="skills-section" className="wrapper">
       {skillsArray.map((skill) => {
         return <SkillCard key={Math.random()} logo={skill.skillLogo} />;
       })}
