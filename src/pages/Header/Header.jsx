@@ -28,7 +28,7 @@ const Header = (props) => {
       section: "work",
     },
     {
-      menuOptionName: "Conatct Me",
+      menuOptionName: "Contact Me",
       icon: <FcAddressBook />,
       routeName: "/#contact",
       section: "contact",
