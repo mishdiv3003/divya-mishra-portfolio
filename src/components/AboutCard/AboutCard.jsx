@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import { Images } from "../../constants";
 
 const AboutCard = () => {
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
   return (
     <>
       <Container fluid className="about-section">
