@@ -38,7 +38,7 @@ function Experience() {
                 {element.title}
               </h4>
               <h5 className="vertical-timeline-element-subtitle ">
-                <a href={element.url}>{element.company}</a>
+                <a href={element.url} target="_blank">{element.company}</a>
               </h5>
               <p id="description">{element.description}</p>
               {showButton && (
@@ -46,7 +46,7 @@ function Experience() {
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`}
-                  href="/"
+                  href={element.url} target="_blank"
                 >
                   {element.buttonText}
                 </a>

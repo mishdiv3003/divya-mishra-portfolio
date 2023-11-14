@@ -5,7 +5,7 @@ let timelineElements = [
     company: "Accenture",
     description:
       "Crafting engaging web experiences. Working with Micro-frontends with React-redux, collaborating with cross-functional teams. Optimizing application performance and user experience by implementing efficient and reusable frontend components",
-    buttonText: "company",
+    buttonText: "Company",
     date: "April 2022 - present",
     icon: "work",
     url: "https://www.accenture.com/in-en",
@@ -16,7 +16,7 @@ let timelineElements = [
     company: "Infosys Ltd.",
     description:
       "Worked on client facing web applications, in React and Angular. Collaborated with cross-functional teams like Product Owners, UX designers, back-end developers, and QA engineers to take wireframes from conception to unit-tested and production-ready user interfaces in Waterfall and Agile Scrum projects.",
-    buttonText: "company",
+    buttonText: "Company",
     date: "January 2022 - April 2022",
     icon: "work",
     url: "https://www.infosys.com/",
@@ -27,9 +27,10 @@ let timelineElements = [
     company: "Infosys Ltd.",
     description:
       "Developed & maintained high-traffic user interfaces using React & TypeScript. Collaborated with Back-End developers for seamless integration ",
-    buttonText: "company",
+    buttonText: "Company",
     date: "January 2021 - January 2022",
     icon: "work",
+    url: "https://www.infosys.com/",
   },
   {
     id: 4,
@@ -40,6 +41,7 @@ let timelineElements = [
     buttonText: "Company",
     date: "December 2018 - January 2021",
     icon: "work",
+    url: "https://www.infosys.com/",
   },
   // {
   //   id: 5,
