@@ -42,7 +42,7 @@ import github from "../assets/github.svg";
 import angular from "../assets/angular.png";
 import gmail from "../assets/gmail_logo.png";
 
-export default {
+const Images = {
   email,
   mobile,
   api,
@@ -83,3 +83,4 @@ export default {
   angular,
   gmail,
 };
+export default Images
