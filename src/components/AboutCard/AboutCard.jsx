@@ -28,7 +28,7 @@ const AboutCard = () => {
             <p style={{ textAlign: "justify" }}>
               I hold a degree in Electronics & Communications Engineering, and
               I'm passionate about technology and creativity. <br />
-              I am akeen learner, and enjoy exploring new technologies and staying
+              I am a keen learner, enjoy exploring new technologies and staying
               up-to-date with industry trends. Outside of work, I'm an avid reader, a novice
               photographer and a dedicated Star Wars enthusiast!
             </p>
