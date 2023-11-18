@@ -28,8 +28,8 @@ const AboutCard = () => {
             <p style={{ textAlign: "justify" }}>
               I hold a degree in Electronics & Communications Engineering, and
               I'm passionate about technology and creativity. <br />
-              Outside of work, I enjoy exploring new technologies and staying
-              up-to-date with industry trends. I'm an avid reader, a novice
+              I am akeen learner, and enjoy exploring new technologies and staying
+              up-to-date with industry trends. Outside of work, I'm an avid reader, a novice
               photographer and a dedicated Star Wars enthusiast!
             </p>
             {/* <span className="read-more" onClick={() => setShowMore(!showMore)}>
@@ -46,9 +46,6 @@ const AboutCard = () => {
             )} */}
           </Col>
           <Col sm={2} md={2} lg={2} xl={2}></Col>
-          {/* <Col sm={4} md={4} lg={4} xl={4} className="profile-container">
-            <img className="profile" src={Images.me} height={240} width={240} />
-          </Col> */}
         </Row>
       </Container>
     </>

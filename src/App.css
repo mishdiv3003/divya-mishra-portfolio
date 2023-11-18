@@ -9,34 +9,14 @@
 .App-link {
   color: var(--text-secondary);
 }
-/* button {
-  color: var(--text-primary);
-  background-color: var(--background);
-  border: 2px var(--text-primary) solid;
-  float: right;
-  transition: all 0.5s;
-} */
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* .app__theme-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  background-color: orange;
-  margin: 0 5px 15px 15px;
-}
-.app__theme-btn svg {
-  height: 1.6rem;
-  width: 1.6rem;
-} */
+
 .App {
   color: var(--text-primary);
   background-color: var(--background);

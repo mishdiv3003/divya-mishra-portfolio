@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import "./Navbar.scss";
 import { Images } from "../../constants";
 import { FaBars } from "react-icons/fa";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
+import "./Navbar.scss";
 
 const Navbar = (props) => {
+
+  const { menuOptionsList, changeTheme, currentTheme } = props;
   const [showHideMenu, setShowHideMenu] = useState(false);
+
   const handleClick = (anchor) => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
@@ -21,17 +24,28 @@ const Navbar = (props) => {
     handleClick(menuOption);
     setShowHideMenu(false);
   };
+
+  const handleThemeSelectionInMenu = () => {
+    changeTheme();
+    setShowHideMenu(false);
+  };
+
   return (
     <>
       <nav className="navbar">
         <div className="navbar_logo">
           <a href="/#about">
-            <img alt="user initials as logo" src={Images.logo_new} width={54} height={54} />
+            <img
+              alt="user initials as logo"
+              src={Images.logo_new}
+              width={54}
+              height={54}
+            />
           </a>
         </div>
         <div className="navbar_link-container">
           <ul className="links">
-            {props.menuOptionsList.map((navObj) => {
+            {menuOptionsList.map((navObj) => {
               return (
                 <li key={Math.random()}>
                   <a
@@ -46,8 +60,8 @@ const Navbar = (props) => {
           </ul>
           <ThemeSwitch
             themeId={"theme_btn"}
-            changeTheme={props.changeTheme}
-            currentTheme={props.currentTheme}
+            changeTheme={changeTheme}
+            currentTheme={currentTheme}
           />
         </div>
 
@@ -61,7 +75,7 @@ const Navbar = (props) => {
         {showHideMenu && (
           <div className="dropdown_menu open">
             <div>
-              {props.menuOptionsList.map((navObj) => {
+              {menuOptionsList.map((navObj) => {
                 return (
                   <li key={Math.random()}>
                     <a
@@ -77,11 +91,15 @@ const Navbar = (props) => {
             <div className="theme-in-menu">
               <ThemeSwitch
                 themeId={"theme_btn_menu"}
-                changeTheme={props.changeTheme}
-                currentTheme={props.currentTheme}
+                changeTheme={handleThemeSelectionInMenu}
+                currentTheme={currentTheme}
               />
 
-              <p>Change Theme</p>
+              <p
+                onClick={handleThemeSelectionInMenu}
+              >
+                Change Theme
+              </p>
             </div>
           </div>
         )}

@@ -1,9 +1,11 @@
 .work-timeline {
   margin-top: 64px;
+
   .vertical-timeline.vertical-timeline--two-columns {
     width: 75%;
   }
 }
+
 .timeline-box {
   .vertical-timeline-element-content {
     background-color: var(--accent);
@@ -14,6 +16,7 @@
 h4 {
   padding-top: 0.25em;
 }
+
 .techStack {
   display: flex;
   justify-content: space-between;
@@ -25,7 +28,8 @@ h4 {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
     0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
   padding: 2em 3em !important;
-  .vertical-timeline-element-content-arrow{
+
+  .vertical-timeline-element-content-arrow {
     border-right: 7px solid #3aafa9 !important;
   }
 }
@@ -45,31 +49,41 @@ h4 {
   padding: 0.5em 1em;
   border-radius: 5px;
   color: white;
+  &:hover{color: orange !important}
 }
 
 .workButton {
   background-color: var(--work-button);
+ 
+  
 }
 
-// .workButton:hover {
-//   background-color: #0ac593;
-// }
 
 .schoolButton {
   background-color: #f9c74f;
+  display: none;
 }
 
 .schoolButton:hover {
   background-color: #f3bc3c;
 }
+
 .vertical-timeline-element-date {
   position: relative;
 }
 
+.more-experience {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    color: orange;
+  }
+
+}
+
 @media only screen and (min-width: 1170px) {
-  .vertical-timeline--two-columns
-    .vertical-timeline-element-content
-    .vertical-timeline-element-date {
+  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
     position: relative !important;
     width: 100%;
     left: 0 !important;

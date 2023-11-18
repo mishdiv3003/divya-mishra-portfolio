@@ -9,6 +9,7 @@ let timelineElements = [
     date: "April 2022 - present",
     icon: "work",
     url: "https://www.accenture.com/in-en",
+    multi: false
   },
   {
     id: 2,
@@ -17,51 +18,45 @@ let timelineElements = [
     description:
       "Worked on client facing web applications, in React and Angular. Collaborated with cross-functional teams like Product Owners, UX designers, back-end developers, and QA engineers to take wireframes from conception to unit-tested and production-ready user interfaces in Waterfall and Agile Scrum projects.",
     buttonText: "Company",
-    date: "January 2022 - April 2022",
+    date: "Dec 2018 - April 2022",
     icon: "work",
     url: "https://www.infosys.com/",
+    multi: true,
+    subRoles:[
+      {
+        id: 2.1,
+        title: "Sr. Systems Engineer",
+        company: "Infosys Ltd.",
+        description:
+          "Developed & maintained high-traffic user interfaces using React & TypeScript. Collaborated with Back-End developers for seamless integration ",
+        buttonText: "Company",
+        date: "Jan 2021 - Jan 2022",
+        icon: "work",
+        url: "https://www.infosys.com/",
+      },
+      {
+        id: 2.2,
+        title: "Systems Engineer",
+        company: "Infosys Ltd.",
+        description:
+          "Created a reusable component library in React Native. Developed a mobile application to provide an interactive learning experience for customers.",
+        buttonText: "Company",
+        date: "Dec 2018 - Jan 2021",
+        icon: "work",
+        url: "https://www.infosys.com/",
+      },
+    ]
   },
   {
     id: 3,
-    title: "Sr. Systems Engineer",
-    company: "Infosys Ltd.",
+    title: "Uttar Pradesh Technical University",
+    location: "Lucknow, India",
     description:
-      "Developed & maintained high-traffic user interfaces using React & TypeScript. Collaborated with Back-End developers for seamless integration ",
-    buttonText: "Company",
-    date: "January 2021 - January 2022",
-    icon: "work",
-    url: "https://www.infosys.com/",
+      "Bachelor of Technology (Hons.) in Electronics & Communications Engineering with 76%.",
+    buttonText: "College Projects",
+    date: "Jul 2012 - Jun 2016",
+    icon: "school",
   },
-  {
-    id: 4,
-    title: "Systems Engineer",
-    company: "Infosys Ltd.",
-    description:
-      "Created a reusable component library in React Native. Developed a mobile application to provide an interactive learning experience for customers.",
-    buttonText: "Company",
-    date: "December 2018 - January 2021",
-    icon: "work",
-    url: "https://www.infosys.com/",
-  },
-  // {
-  //   id: 5,
-  //   title: "Hawking College",
-  //   location: "Skystead, Craonia",
-  //   description:
-  //     "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  //   buttonText: "College Projects",
-  //   date: "2007 - 2011",
-  //   icon: "school",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Marble Hills Grammar School",
-  //   location: "Dragontail, Ascana",
-  //   description:
-  //     "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  //   date: "2003 - 2007",
-  //   icon: "school",
-  // },
 ];
 
 export default timelineElements;

@@ -3,14 +3,15 @@ import "./ThemeSwitch.scss";
 import { RiLightbulbFlashLine, RiLightbulbLine } from "react-icons/ri";
 
 const ThemeSwitch = (props) => {
+  const {changeTheme, themeId, currentTheme} = props
   return (
     <>
       <button
-        id={props.themeId}
+        id={themeId}
         className="app__theme-btn"
-        onClick={props.changeTheme}
+        onClick={changeTheme}
       >
-        {props.currentTheme === "dark" ? (
+        {currentTheme === "dark" ? (
           <RiLightbulbLine />
         ) : (
           <RiLightbulbFlashLine />
